@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ontario Speed Dating | Hamilton, Stoney Creek and Burlington</title>
+<meta name="description" content="Speed dating nights and matchmaker memberships across Hamilton, Stoney Creek and Burlington. Tickets from $15, taxes included.">
+<!-- Sales preview build. Not the live site. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0f0b08">
+<link rel="preload" href="assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-serif-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/film/frames-city/f001.jpg" as="image" fetchpriority="high">
+<link rel="stylesheet" href="css/lenis.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f0b08'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23e2a04f'/%3E%3C/svg%3E">
+<script>
+  /* Film mode only when JavaScript runs and the visitor has not asked for reduced motion. */
+  (function () {
+    var d = document.documentElement;
+    d.classList.add("js");
+    try {
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) d.classList.add("js-film");
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip the film, go to content</a>
+
+<header class="site-header" id="site-header">
+  <a class="wordmark" href="#top" aria-label="Ontario Speed Dating, back to top">
+    <span>Ontario</span> <span>Speed Dating</span>
+  </a>
+  <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+    <ul>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#memberships">Memberships</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+    <span class="menu-toggle-bars" aria-hidden="true"></span>
+    <span class="visually-hidden">Menu</span>
+  </button>
+  <a class="header-cta" href="#events" id="header-cta">Find your night</a>
+</header>
+
+<!-- THE JOURNEY: a pinned stage scrubbed by scroll. Static poster hero without JS or with reduced motion. -->
+<section class="journey" id="journey" aria-labelledby="hero-title">
+  <div class="stage">
+    <img class="stage-poster" src="assets/film/frames-city/f001.jpg" width="960" height="540"
+         alt="Film still: a rain wet main street at night, shop windows glowing amber." fetchpriority="high">
+    <canvas class="stage-canvas" aria-hidden="true"></canvas>
+    <div class="stage-vignette" aria-hidden="true"></div>
+    <div class="stage-grain" aria-hidden="true"></div>
+    <div class="stage-fade" aria-hidden="true"></div>
+
+    <div class="stage-inner">
+      <h1 class="hero-title" id="hero-title">
+        <span class="hero-line">Meet someone real,</span>
+        <em class="hero-line accent">in person.</em>
+      </h1>
+
+      <div class="captions">
+        <p class="caption is-active" data-chapter="0">
+          <span class="caption-label">01 The City</span>
+          <span class="caption-text">Speed dating nights across Hamilton, Stoney Creek and Burlington.</span>
+        </p>
+        <p class="caption" data-chapter="1">
+          <span class="caption-label">02 The Room</span>
+          <span class="caption-text">Long tables, low light, five minutes a round.</span>
+        </p>
+        <p class="caption" data-chapter="2">
+          <span class="caption-label">03 The Night</span>
+          <span class="caption-text">The bell rings, the men switch seats, and everyone meets everyone.</span>
+        </p>
+        <p class="caption" data-chapter="3">
+          <span class="caption-label">04 The Match</span>
+          <span class="caption-text">Mark your card. Mutual matches get each other's contact info within 1 to 72 hours.</span>
+        </p>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true"><span class="scroll-cue-mark"></span>Scroll</div>
+
+      <nav class="rail" aria-label="Chapters of the night">
+        <ol class="rail-list">
+          <li><button type="button" class="rail-item is-active" data-goto="0" aria-current="step" aria-label="Chapter 01, The City"><span class="rail-num">01</span><span class="rail-name">The City</span></button></li>
+          <li><button type="button" class="rail-item" data-goto="1" aria-label="Chapter 02, The Room"><span class="rail-num">02</span><span class="rail-name">The Room</span></button></li>
+          <li><button type="button" class="rail-item" data-goto="2" aria-label="Chapter 03, The Night"><span class="rail-num">03</span><span class="rail-name">The Night</span></button></li>
+          <li><button type="button" class="rail-item" data-goto="3" aria-label="Chapter 04, The Match"><span class="rail-num">04</span><span class="rail-name">The Match</span></button></li>
+        </ol>
+        <div class="rail-progress" aria-hidden="true"><span class="rail-progress-fill"></span></div>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- Shown only when the film is off: the four chapters as plain text, so the story survives. -->
+<section class="chapters-static" aria-label="The night, in four chapters">
+  <ol>
+    <li><span class="label">01 The City</span><p>Speed dating nights across Hamilton, Stoney Creek and Burlington.</p></li>
+    <li><span class="label">02 The Room</span><p>Long tables, low light, five minutes a round.</p></li>
+    <li><span class="label">03 The Night</span><p>The bell rings, the men switch seats, and everyone meets everyone.</p></li>
+    <li><span class="label">04 The Match</span><p>Mark your card. Mutual matches get each other's contact info within 1 to 72 hours.</p></li>
+  </ol>
+</section>
+
+<main id="main" tabindex="-1">
+
+  <!-- 1. HOW A NIGHT WORKS (cream editorial) -->
+  <section class="section section--cream how" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">How a night works</p>
+        <h2 id="how-title" class="display">Five minutes a round, <em>until everyone has met.</em></h2>
+        <p class="lede">Men and women face each other at long tables. Every conversation lasts 5 minutes. Then the bell.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">01</span>
+          <h3>Take your seat</h3>
+          <p>Each night is for a set age range. You sit across from someone at a long table and talk for 5 minutes.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">02</span>
+          <h3>The bell rings</h3>
+          <p>The men switch seats and it starts again, round after round, until everyone has met. Expect to meet 7 to 15 people.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">03</span>
+          <h3>Mark your card</h3>
+          <p>For each person you meet, mark your match card: <span class="nowrap">"friend"</span> or <span class="nowrap">"more".</span></p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">04</span>
+          <h3>Get your matches</h3>
+          <p>Scores are sent 1 to 72 hours after the last round. Mutual matches receive each other's contact info.</p>
+        </li>
+      </ol>
+
+      <dl class="facts">
+        <div><dt>Conversations</dt><dd>5 minutes each</dd></div>
+        <div><dt>People you meet</dt><dd>7 to 15</dd></div>
+        <div><dt>A full event</dt><dd>About 90 minutes to 3 hours</dd></div>
+        <div><dt>Minimum age</dt><dd>19</dd></div>
+      </dl>
+
+      <p class="fineprint how-note">Your age must fall within the night's range, or you turn the minimum age, or the maximum age plus one, by Dec 31 at 11:59 PM this year. If your age is disputed, bring photo ID: a Canadian passport, an Ontario Photo Card or an Ontario Driver's Licence. Health cards are not accepted.</p>
+    </div>
+  </section>
+
+  <!-- 2. EVENTS (dark) -->
+  <section class="section section--dark events" id="events" aria-labelledby="events-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="label">Events</p>
+          <h2 id="events-title" class="display">Pick your <em>night.</em></h2>
+        </div>
+        <p class="lede">Every listed night, with the price you actually pay. Taxes are included. Tickets stop selling a few days before each night so the venue staff can prepare.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter nights">
+        <button type="button" class="filter is-on" data-filter="all" aria-pressed="true">All nights</button>
+        <button type="button" class="filter" data-filter="Hamilton" aria-pressed="false">Hamilton</button>
+        <button type="button" class="filter" data-filter="Stoney Creek" aria-pressed="false">Stoney Creek</button>
+        <button type="button" class="filter" data-filter="Burlington" aria-pressed="false">Burlington</button>
+        <button type="button" class="filter" data-filter="crawl" aria-pressed="false">Pub crawls</button>
+      </div>
+      <p class="visually-hidden" id="filter-status" role="status" aria-live="polite"></p>
+
+      <ul class="event-grid" id="event-grid">
+<!-- EVENTS:START -->
+        <li class="event-card" data-event-id="2026-11-21-the-ship" data-city="Hamilton" data-format="crawl">
+          <article class="event" aria-labelledby="ev-2026-11-21-the-ship">
+            <div class="event-media"><img src="assets/img/venues/venue-the-ship.jpg" width="446" height="313" loading="lazy" alt="The Ship in Hamilton, an ivy covered red brick pub with blue patio umbrellas out front"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Dating + Pub Crawl <span aria-hidden="true">&middot;</span> Hamilton</p>
+              <h3 class="event-date" id="ev-2026-11-21-the-ship">Saturday, November 21</h3>
+              <p class="event-time">8:31 to 10:31 PM</p>
+              <p class="event-venue">The Ship<span>, Hamilton</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>Not stated on the listing (minimum age 19)</dd></div>
+                <div><dt>Includes</dt><dd>Pub crawl format.</dd></div>
+                <div><dt>Capacity</dt><dd>Not stated on the listing</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Not stated on the listing</dd></div>
+              </dl>
+            <p class="event-note">Waiver required. Tickets do not include alcohol. Photo ID and dress shoes for the clubs.</p>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$15</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-11-21-the-ship">Book<span class="visually-hidden"> Saturday, November 21 at The Ship</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+        <li class="event-card" data-event-id="2026-11-23-lotos" data-city="Stoney Creek" data-format="speed">
+          <article class="event" aria-labelledby="ev-2026-11-23-lotos">
+            <div class="event-media"><img src="assets/img/venues/venue-lotos.jpg" width="334" height="313" loading="lazy" alt="Exterior of Lotos Pizzeria at 275 Barton Street in Stoney Creek, a grey building with a red Lotos sign"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Speed dating <span aria-hidden="true">&middot;</span> Stoney Creek</p>
+              <h3 class="event-date" id="ev-2026-11-23-lotos">Monday, November 23</h3>
+              <p class="event-time">7:01 to 9:01 PM</p>
+              <p class="event-venue">Lotos Pizzeria<span>, Stoney Creek</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>30 to 50</dd></div>
+                <div><dt>Includes</dt><dd>$10 off venue menu items.</dd></div>
+                <div><dt>Capacity</dt><dd>30 seats: 15 male, 15 female</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Thu Nov 19, 7:01 PM</dd></div>
+              </dl>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$28</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-11-23-lotos">Book<span class="visually-hidden"> Monday, November 23 at Lotos Pizzeria</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+        <li class="event-card" data-event-id="2026-11-25-king-billiards" data-city="Hamilton" data-format="speed">
+          <article class="event" aria-labelledby="ev-2026-11-25-king-billiards">
+            <div class="event-media"><img src="assets/img/venues/venue-king-billiards.jpg" width="600" height="313" loading="lazy" alt="Street view of the King Billiards and Sports Bar storefront on King Street West in Hamilton"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Speed dating <span aria-hidden="true">&middot;</span> Hamilton</p>
+              <h3 class="event-date" id="ev-2026-11-25-king-billiards">Wednesday, November 25</h3>
+              <p class="event-time">9:00 to 11:00 PM</p>
+              <p class="event-venue">King Billiards and Sports Bar<span>, Hamilton</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>19 to 35, students</dd></div>
+                <div><dt>Includes</dt><dd>Choice of alcohol or $10 off menu items.</dd></div>
+                <div><dt>Capacity</dt><dd>20 seats: 10 male, 10 female</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Sat Nov 21, 9:00 PM</dd></div>
+              </dl>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$28</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-11-25-king-billiards">Book<span class="visually-hidden"> Wednesday, November 25 at King Billiards and Sports Bar</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+        <li class="event-card" data-event-id="2026-12-02-king-billiards" data-city="Hamilton" data-format="speed">
+          <article class="event" aria-labelledby="ev-2026-12-02-king-billiards">
+            <div class="event-media"><img src="assets/img/venues/venue-king-billiards.jpg" width="600" height="313" loading="lazy" alt="Street view of the King Billiards and Sports Bar storefront on King Street West in Hamilton"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Speed dating <span aria-hidden="true">&middot;</span> Hamilton</p>
+              <h3 class="event-date" id="ev-2026-12-02-king-billiards">Wednesday, December 2</h3>
+              <p class="event-time">9:00 to 11:00 PM</p>
+              <p class="event-venue">King Billiards and Sports Bar<span>, Hamilton</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>30 to 50</dd></div>
+                <div><dt>Includes</dt><dd>Choice of alcohol or $10 off menu items.</dd></div>
+                <div><dt>Capacity</dt><dd>20 seats: 10 male, 10 female</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Sat Nov 28, 9:00 PM</dd></div>
+              </dl>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$28</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-12-02-king-billiards">Book<span class="visually-hidden"> Wednesday, December 2 at King Billiards and Sports Bar</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+        <li class="event-card" data-event-id="2026-12-05-the-ship" data-city="Hamilton" data-format="crawl">
+          <article class="event" aria-labelledby="ev-2026-12-05-the-ship">
+            <div class="event-media"><img src="assets/img/venues/venue-the-ship.jpg" width="446" height="313" loading="lazy" alt="The Ship in Hamilton, an ivy covered red brick pub with blue patio umbrellas out front"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Dating + Pub Crawl <span aria-hidden="true">&middot;</span> Hamilton</p>
+              <h3 class="event-date" id="ev-2026-12-05-the-ship">Saturday, December 5</h3>
+              <p class="event-time">8:31 to 10:31 PM</p>
+              <p class="event-venue">The Ship<span>, Hamilton</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>19+</dd></div>
+                <div><dt>Includes</dt><dd>Dating + Pub Crawl. Speed dating is added free if enough people register.</dd></div>
+                <div><dt>Capacity</dt><dd>18 seats: 9 male, 9 female</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Fri Dec 4, 8:31 PM</dd></div>
+              </dl>
+            <p class="event-note">Waiver required. Tickets do not include alcohol. Photo ID and dress shoes for the clubs.</p>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$15</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-12-05-the-ship">Book<span class="visually-hidden"> Saturday, December 5 at The Ship</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+        <li class="event-card" data-event-id="2026-12-07-skyway-diner" data-city="Burlington" data-format="speed">
+          <article class="event" aria-labelledby="ev-2026-12-07-skyway-diner">
+            <div class="event-media"><img src="assets/img/venues/venue-skyway-diner.jpg" width="600" height="313" loading="lazy" alt="The Skyway Diner sign in blue letters above the entrance in Burlington"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Speed dating <span aria-hidden="true">&middot;</span> Burlington</p>
+              <h3 class="event-date" id="ev-2026-12-07-skyway-diner">Monday, December 7</h3>
+              <p class="event-time">7:01 to 9:01 PM</p>
+              <p class="event-venue">Skyway Diner<span>, Burlington</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>30 to 50</dd></div>
+                <div><dt>Includes</dt><dd>Choice of pop or $10 off menu items.</dd></div>
+                <div><dt>Capacity</dt><dd>30 seats: 15 male, 15 female</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Mon Nov 30, 7:01 PM</dd></div>
+              </dl>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$28</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-12-07-skyway-diner">Book<span class="visually-hidden"> Monday, December 7 at Skyway Diner</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+        <li class="event-card" data-event-id="2026-12-08-lotos" data-city="Stoney Creek" data-format="speed">
+          <article class="event" aria-labelledby="ev-2026-12-08-lotos">
+            <div class="event-media"><img src="assets/img/venues/venue-lotos.jpg" width="334" height="313" loading="lazy" alt="Exterior of Lotos Pizzeria at 275 Barton Street in Stoney Creek, a grey building with a red Lotos sign"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Speed dating <span aria-hidden="true">&middot;</span> Stoney Creek</p>
+              <h3 class="event-date" id="ev-2026-12-08-lotos">Tuesday, December 8</h3>
+              <p class="event-time">7:01 to 9:01 PM</p>
+              <p class="event-venue">Lotos Pizzeria<span>, Stoney Creek</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>50 to 75, seniors</dd></div>
+                <div><dt>Includes</dt><dd>$10 off menu items.</dd></div>
+                <div><dt>Capacity</dt><dd>30 seats: 15 male, 15 female</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Fri Dec 4, 7:01 PM</dd></div>
+              </dl>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$28</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-12-08-lotos">Book<span class="visually-hidden"> Tuesday, December 8 at Lotos Pizzeria</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+        <li class="event-card" data-event-id="2026-12-12-the-ship" data-city="Hamilton" data-format="crawl">
+          <article class="event" aria-labelledby="ev-2026-12-12-the-ship">
+            <div class="event-media"><img src="assets/img/venues/venue-the-ship.jpg" width="446" height="313" loading="lazy" alt="The Ship in Hamilton, an ivy covered red brick pub with blue patio umbrellas out front"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Dating + Pub Crawl <span aria-hidden="true">&middot;</span> Hamilton</p>
+              <h3 class="event-date" id="ev-2026-12-12-the-ship">Saturday, December 12</h3>
+              <p class="event-time">8:31 to 10:31 PM</p>
+              <p class="event-venue">The Ship<span>, Hamilton</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>19+</dd></div>
+                <div><dt>Includes</dt><dd>Dating + Pub Crawl. Speed dating is added free if enough people register.</dd></div>
+                <div><dt>Capacity</dt><dd>18 seats: 9 male, 9 female</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Fri Dec 11, 8:31 PM</dd></div>
+              </dl>
+            <p class="event-note">Waiver required. Tickets do not include alcohol. Photo ID and dress shoes for the clubs.</p>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$15</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-12-12-the-ship">Book<span class="visually-hidden"> Saturday, December 12 at The Ship</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+        <li class="event-card" data-event-id="2026-12-16-king-billiards" data-city="Hamilton" data-format="speed">
+          <article class="event" aria-labelledby="ev-2026-12-16-king-billiards">
+            <div class="event-media"><img src="assets/img/venues/venue-king-billiards.jpg" width="600" height="313" loading="lazy" alt="Street view of the King Billiards and Sports Bar storefront on King Street West in Hamilton"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Speed dating <span aria-hidden="true">&middot;</span> Hamilton</p>
+              <h3 class="event-date" id="ev-2026-12-16-king-billiards">Wednesday, December 16</h3>
+              <p class="event-time">9:00 to 11:00 PM</p>
+              <p class="event-venue">King Billiards and Sports Bar<span>, Hamilton</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>19 to 35</dd></div>
+                <div><dt>Includes</dt><dd>Choice of alcohol or $10 off menu items.</dd></div>
+                <div><dt>Capacity</dt><dd>20 seats: 10 male, 10 female</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Sat Dec 12, 9:00 PM</dd></div>
+              </dl>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$28</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-12-16-king-billiards">Book<span class="visually-hidden"> Wednesday, December 16 at King Billiards and Sports Bar</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+        <li class="event-card" data-event-id="2026-12-18-dough-box" data-city="Hamilton" data-format="speed">
+          <article class="event" aria-labelledby="ev-2026-12-18-dough-box">
+            <div class="event-media"><img src="assets/img/venues/venue-dough-box.jpg" width="600" height="313" loading="lazy" alt="Exterior of Dough Box, a wood fired pizza and pasta restaurant on Main Street West in Hamilton"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Speed dating <span aria-hidden="true">&middot;</span> Hamilton</p>
+              <h3 class="event-date" id="ev-2026-12-18-dough-box">Friday, December 18</h3>
+              <p class="event-time">8:01 to 10:01 PM</p>
+              <p class="event-venue">Dough Box<span>, Hamilton</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>19 to 35</dd></div>
+                <div><dt>Includes</dt><dd>Pop, plus free pizza slices (per the venue page).</dd></div>
+                <div><dt>Capacity</dt><dd>30 seats: 15 male, 15 female</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Wed Dec 16, 8:01 PM</dd></div>
+              </dl>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$26</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-12-18-dough-box">Book<span class="visually-hidden"> Friday, December 18 at Dough Box</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+        <li class="event-card" data-event-id="2026-12-21-skyway-diner" data-city="Burlington" data-format="speed">
+          <article class="event" aria-labelledby="ev-2026-12-21-skyway-diner">
+            <div class="event-media"><img src="assets/img/venues/venue-skyway-diner.jpg" width="600" height="313" loading="lazy" alt="The Skyway Diner sign in blue letters above the entrance in Burlington"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Speed dating <span aria-hidden="true">&middot;</span> Burlington</p>
+              <h3 class="event-date" id="ev-2026-12-21-skyway-diner">Monday, December 21</h3>
+              <p class="event-time">7:00 to 9:00 PM</p>
+              <p class="event-venue">Skyway Diner<span>, Burlington</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>19 to 35</dd></div>
+                <div><dt>Includes</dt><dd>Choice of pop or $10 off menu items.</dd></div>
+                <div><dt>Capacity</dt><dd>30 seats: 15 male, 15 female</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Mon Dec 14, 7:00 PM</dd></div>
+              </dl>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$28</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-12-21-skyway-diner">Book<span class="visually-hidden"> Monday, December 21 at Skyway Diner</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+        <li class="event-card" data-event-id="2026-12-22-lotos" data-city="Stoney Creek" data-format="speed">
+          <article class="event" aria-labelledby="ev-2026-12-22-lotos">
+            <div class="event-media"><img src="assets/img/venues/venue-lotos.jpg" width="334" height="313" loading="lazy" alt="Exterior of Lotos Pizzeria at 275 Barton Street in Stoney Creek, a grey building with a red Lotos sign"></div>
+            <div class="event-body">
+              <p class="label event-kicker">Speed dating <span aria-hidden="true">&middot;</span> Stoney Creek</p>
+              <h3 class="event-date" id="ev-2026-12-22-lotos">Tuesday, December 22</h3>
+              <p class="event-time">7:00 to 9:00 PM</p>
+              <p class="event-venue">Lotos Pizzeria<span>, Stoney Creek</span></p>
+              <dl class="event-meta">
+                <div><dt>Ages</dt><dd>19 to 35</dd></div>
+                <div><dt>Includes</dt><dd>$10 off venue menu items.</dd></div>
+                <div><dt>Capacity</dt><dd>30 seats: 15 male, 15 female</dd></div>
+                <div><dt>Tickets close</dt><dd class="event-close">Fri Dec 18, 7:00 PM</dd></div>
+              </dl>
+              <div class="event-buy">
+                <p class="event-price"><span class="event-amount">$28</span> <span class="event-tax">taxes included</span></p>
+                <button type="button" class="btn btn--amber event-book" data-book="2026-12-22-lotos">Book<span class="visually-hidden"> Tuesday, December 22 at Lotos Pizzeria</span></button>
+              </div>
+              <p class="event-status" data-status hidden></p>
+            </div>
+          </article>
+        </li>
+<!-- EVENTS:END -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- ATMOSPHERE INTERLUDE -->
+  <section class="interlude" aria-labelledby="interlude-title">
+    <img class="interlude-img" src="assets/img/city/augusta-dusk.jpg" width="1280" height="848" loading="lazy"
+         alt="A Hamilton street at dusk, bar signs lit under a tree as a vehicle streaks past.">
+    <div class="interlude-shade" aria-hidden="true"></div>
+    <div class="wrap interlude-copy">
+      <h2 id="interlude-title" class="display">Three cities, <em>one night at a time.</em></h2>
+      <p>Ontario Speed Dating rents rooms in restaurants, a billiards hall and a pub, and runs at most one event a day.</p>
+      <p class="photo-note">Atmosphere photo, Hamilton.</p>
+    </div>
+  </section>
+
+  <!-- 3. VENUES -->
+  <section class="section section--ink venues" id="venues" aria-labelledby="venues-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">Venues</p>
+        <h2 id="venues-title" class="display">Five rooms, <em>three cities.</em></h2>
+        <p class="lede">Real places you can walk into. Each one runs a night once enough people register; the minimum is listed for every venue.</p>
+      </div>
+<!-- VENUES:START -->
+      <div class="city-block">
+        <div class="city-head">
+          <div class="city-title">
+            <h3 class="city-name">Hamilton</h3>
+            <p>Three venues: Dough Box, King Billiards and Sports Bar, and The Ship.</p>
+          </div>
+          <figure class="city-photo"><img src="assets/img/city/hamilton-skyline.jpg" width="1200" height="608" loading="lazy" alt="Downtown Hamilton skyline at dusk, towers lit against a blue evening sky."><figcaption class="photo-note">Hamilton. City photo.</figcaption></figure>
+        </div>
+        <ul class="venue-list">
+            <li class="venue">
+              <img src="assets/img/venues/venue-dough-box.jpg" width="600" height="313" loading="lazy" alt="Exterior of Dough Box, a wood fired pizza and pasta restaurant on Main Street West in Hamilton">
+              <div class="venue-body">
+                <h4>Dough Box</h4>
+                <address>1457 Main St. W., Hamilton, ON L8S 1C9</address>
+                <ul class="venue-notes"><li>Minutes from McMaster University.</li><li>Tickets here include free pizza slices and pop.</li></ul>
+                <p class="venue-min"><span class="label">Runs with</span> at least 7 male and 7 female registrations<span class="venue-site"> &middot; doughbox.ca</span></p>
+              </div>
+            </li>
+            <li class="venue">
+              <img src="assets/img/venues/venue-king-billiards.jpg" width="600" height="313" loading="lazy" alt="Street view of the King Billiards and Sports Bar storefront on King Street West in Hamilton">
+              <div class="venue-body">
+                <h4>King Billiards and Sports Bar</h4>
+                <address>840 King St. W., Hamilton, ON L8S 1K3</address>
+                <ul class="venue-notes"><li>Dimmed lights.</li><li>Bar drinks from $5.</li><li>Pool $9 an hour, 1 to 5 PM, Monday to Thursday.</li><li>City meter parking, bike share and bus access.</li></ul>
+                <p class="venue-min"><span class="label">Runs with</span> at least 5 male and 5 female registrations</p>
+              </div>
+            </li>
+            <li class="venue">
+              <img src="assets/img/venues/venue-the-ship.jpg" width="446" height="313" loading="lazy" alt="The Ship in Hamilton, an ivy covered red brick pub with blue patio umbrellas out front">
+              <div class="venue-body">
+                <h4>The Ship</h4>
+                <address>23 Augusta Street, Hamilton, ON L8N 1P6</address>
+                <ul class="venue-notes"><li>Home of the Dating + Pub Crawl nights.</li></ul>
+                <p class="venue-min"><span class="label">Runs with</span> at least 1 male and 1 female registrations<span class="venue-site"> &middot; theship.ca</span></p>
+              </div>
+            </li>
+        </ul>
+      </div>
+      <div class="city-block city-block--plain">
+        <div class="city-head">
+          <div class="city-title">
+            <h3 class="city-name">Stoney Creek</h3>
+            <p>One venue: Lotos Pizzeria.</p>
+          </div>
+        </div>
+        <ul class="venue-list">
+            <li class="venue">
+              <img src="assets/img/venues/venue-lotos.jpg" width="334" height="313" loading="lazy" alt="Exterior of Lotos Pizzeria at 275 Barton Street in Stoney Creek, a grey building with a red Lotos sign">
+              <div class="venue-body">
+                <h4>Lotos Pizzeria</h4>
+                <address>275 Barton St. E, Stoney Creek, ON L8E 2K4</address>
+                <ul class="venue-notes"><li>Centre of Stoney Creek.</li><li>Free on site and nearby parking.</li><li>Tickets here include a $10 coupon you can use against the total bill, alcohol included.</li></ul>
+                <p class="venue-min"><span class="label">Runs with</span> at least 7 male and 7 female registrations<span class="venue-site"> &middot; lotos.pvmt.com</span></p>
+              </div>
+            </li>
+        </ul>
+      </div>
+      <div class="city-block">
+        <div class="city-head">
+          <div class="city-title">
+            <h3 class="city-name">Burlington</h3>
+            <p>One venue: Skyway Diner.</p>
+          </div>
+          <figure class="city-photo"><img src="assets/img/city/burlington-waterfront.png" width="1200" height="800" loading="lazy" alt="Aerial view of the Burlington waterfront at sunset, a curved pier over the lake with towers behind."><figcaption class="photo-note">Burlington. City photo.</figcaption></figure>
+        </div>
+        <ul class="venue-list">
+            <li class="venue">
+              <img src="assets/img/venues/venue-skyway-diner.jpg" width="600" height="313" loading="lazy" alt="The Skyway Diner sign in blue letters above the entrance in Burlington">
+              <div class="venue-body">
+                <h4>Skyway Diner</h4>
+                <address>645 Plains Rd. E., Burlington, ON L7T 4J5</address>
+                <ul class="venue-notes"><li>Two blocks from the QEW.</li><li>Named after the nearby Skyway bridge.</li></ul>
+                <p class="venue-min"><span class="label">Runs with</span> at least 7 male and 7 female registrations<span class="venue-site"> &middot; theskywaydiner.ca</span></p>
+              </div>
+            </li>
+        </ul>
+      </div>
+<!-- VENUES:END -->
+    </div>
+  </section>
+
+  <!-- 4. TICKETS, THREE WAYS -->
+  <section class="section section--dark tickets" id="tickets" aria-labelledby="tickets-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="label">Tickets</p>
+          <h2 id="tickets-title" class="display">Tickets, <em>three ways.</em></h2>
+        </div>
+        <figure class="tickets-photo">
+          <img src="assets/img/city/augusta-night.jpg" width="1024" height="684" loading="lazy"
+               alt="A crowded Hamilton bar street at night seen from above, strung with warm lights.">
+          <figcaption class="photo-note">Atmosphere photo, Hamilton after dark.</figcaption>
+        </figure>
+      </div>
+
+      <div class="ticket-ways">
+        <article class="way" aria-labelledby="way-regular">
+          <p class="label">01</p>
+          <h3 id="way-regular">Regular event tickets</h3>
+          <p class="way-price">$15, $26 or $28</p>
+          <ul class="ticks">
+            <li>The price you see is the price you pay. Taxes and the service fee are already included.</li>
+            <li>Tickets are sold only through this box office.</li>
+            <li>Tickets bought from third parties, including Eventbrite and Ticketmaster, are not accepted for entry.</li>
+            <li>A multi buy discount applies when you buy several tickets to one night in one order.</li>
+          </ul>
+          <a class="btn btn--line" href="#events">See the nights</a>
+        </article>
+
+        <article class="way" aria-labelledby="way-floater">
+          <p class="label">02</p>
+          <h3 id="way-floater">Floater tickets</h3>
+          <p class="way-price">$42 each <span>or $40 each for 3 or more</span></p>
+          <ul class="ticks">
+            <li>Tell us your age, your weekly availability and any venue or area limits.</li>
+            <li>You are placed into a compatible running event within 30 days, or refunded.</li>
+            <li>Includes a free menu item credit at the event you are placed in.</li>
+            <li>Floater holders need to be available at least 4 hours a week.</li>
+          </ul>
+          <a class="btn btn--line" href="#contact" data-prefill="floater">Ask for a Floater ticket</a>
+        </article>
+
+        <article class="way way--photo" aria-labelledby="way-crawl">
+          <img class="way-img" src="assets/img/venues/ship-day.jpg" width="1600" height="1200" loading="lazy"
+               alt="The Ship on a sunny day, a red brick Victorian pub with ivy, a black awning and an empty patio.">
+          <p class="label">03</p>
+          <h3 id="way-crawl">Dating + Pub Crawl at The Ship</h3>
+          <p class="way-price">$15</p>
+          <ul class="ticks">
+            <li>Free bar entry and a glowing band. Games along the way, and a prize is possible.</li>
+            <li>A signed waiver is required.</li>
+            <li>Tickets do not include alcohol, and there are no drinking games.</li>
+            <li>Bring government photo ID and wear dress shoes for the clubs.</li>
+          </ul>
+          <button type="button" class="btn btn--line" data-filter-jump="crawl">See pub crawl nights</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. MATCHMAKER MEMBERSHIPS -->
+  <section class="section section--ink memberships" id="memberships" aria-labelledby="memberships-title">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="label">Matchmaker memberships</p>
+          <h2 id="memberships-title" class="display">Let someone else <em>do the searching.</em></h2>
+        </div>
+        <p class="lede">A 90 day matchmaking membership with consultations and blind dates. Matches come only from paying members.</p>
+      </div>
+
+      <ul class="tiers">
+        <li class="tier">
+          <h3>Bronze</h3>
+          <p class="tier-price">$110 <span>for 90 days</span></p>
+          <ul class="ticks">
+            <li>Daily match searching</li>
+            <li>1 FREE event ticket</li>
+            <li>1 blind date</li>
+            <li>Complimentary drink per meeting</li>
+          </ul>
+          <button type="button" class="btn btn--amber" data-membership="bronze">Book a consultation<span class="visually-hidden">, Bronze</span></button>
+        </li>
+        <li class="tier">
+          <h3>Silver</h3>
+          <p class="tier-price">$200 <span>for 90 days</span></p>
+          <ul class="ticks">
+            <li>Daily match searching</li>
+            <li>2 FREE event tickets</li>
+            <li>1 blind date</li>
+            <li>1 in person consultation</li>
+            <li>Complimentary drink per meeting</li>
+          </ul>
+          <button type="button" class="btn btn--amber" data-membership="silver">Book a consultation<span class="visually-hidden">, Silver</span></button>
+        </li>
+        <li class="tier">
+          <h3>Gold</h3>
+          <p class="tier-price">$390 <span>for 90 days</span></p>
+          <ul class="ticks">
+            <li>Daily match searching</li>
+            <li>3 FREE event tickets</li>
+            <li>2 blind dates</li>
+            <li>1 in person consultation</li>
+            <li>Complimentary drink per meeting</li>
+          </ul>
+          <button type="button" class="btn btn--amber" data-membership="gold">Book a consultation<span class="visually-hidden">, Gold</span></button>
+        </li>
+      </ul>
+
+      <div class="member-steps">
+        <div class="member-step">
+          <p class="label">Step 1</p>
+          <h3>Consultation</h3>
+          <p>Online, free, or in person with one complimentary drink. A consultation lasts 1 hour.</p>
+        </div>
+        <div class="member-step">
+          <p class="label">Step 2</p>
+          <h3>Search and date</h3>
+          <p>Matches come only from paying members. The host is present on site, and the venue and time are agreed by both of you. A blind date lasts 2 hours.</p>
+        </div>
+      </div>
+      <p class="fineprint">Included event tickets can be used at events valued at $49.99 or under. You can take a break from match notifications free of charge; breaks do not extend the 90 days. Service is in English only.</p>
+    </div>
+  </section>
+
+  <!-- 6. TESTIMONIAL -->
+  <section class="section section--cream testimonial" id="testimonial" aria-labelledby="testimonial-title">
+    <div class="wrap wrap--narrow">
+      <p class="label">A customer email</p>
+      <h2 id="testimonial-title" class="display">In her <em>own words.</em></h2>
+      <p class="testimonial-context">Patricia bought a ticket in May 2025. The event was later canceled for lack of men, and when she did not reply within 96 hours about a transfer, her ticket was refunded. On June 15 she wrote to the host. Her email, as she wrote it:</p>
+      <figure class="pull">
+        <blockquote>
+          <p>I am sincerely grateful for the enormous effort you made reaching out to me regarding cancelation of the speed dating event and offering options. I owe you a huge apology for not reaching out until now; it truly was very thoughtless of me for not replying and disrespectful.</p>
+          <p>I recognize and appreciate you went the extra mile to reach out to and offer me a preference of choice; i imagine i must have truly frustrated you, and I apologize.</p>
+          <p>When we met in person, you seemed like a very thoughtful, honest and understanding man; your efforts have shown me you truly are, and that you also are a man who honors his word; those are traits to be proud of, you are a good man.</p>
+          <p>When we met I mentioned was experiencing a lot of heavy stuff concerning my moms health worsening, her pending surgery, plus I had just begun bouncing out of coping with some other stuff connected to dating, and that i had signed up as I felt it was something nice to try for myself.</p>
+          <p>Well, it seems I was a bit impulsive registering for your event, as thereafter many things stirred up resulting in much more pressure and additional stresses arising concerning my moms health and other matters, so the cancellation worked out best for me afterall. Unfurtunately in the midst of coping with such, I kinda ignored my emails etc</p>
+          <p>you truly are an honest upfront man, and a man of his word; those are wonderful traits; please be proud of yourself.</p>
+          <p>I'm going to pass signing up for another speed dating event for the time being, until certain things settle back down in my life.</p>
+          <p>Thank you again for letting me know and for your efforts trying.</p>
+        </blockquote>
+        <figcaption><span class="label">Patricia</span> Customer email, June 15, 2025. Reproduced as printed, spelling included.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7. GOOD TO KNOW -->
+  <section class="section section--dark faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq-layout">
+      <div class="section-head">
+        <p class="label">Good to know</p>
+        <h2 id="faq-title" class="display">Plain answers, <em>no surprises.</em></h2>
+        <p class="lede">The short version of the policies. Buying a ticket means accepting Ontario Speed Dating's purchase agreement.</p>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Is a match guaranteed?</summary>
+          <p>No. Nobody can promise a match, and we do not. There is also no guarantee of a preferred free drink, a prize, or that every registered person will arrive. The one guaranteed item is a free item for on time arrivals at running events, unless the event description says otherwise.</p>
+        </details>
+        <details>
+          <summary>What happens if an event is canceled?</summary>
+          <p>You choose: a refund to your original payment method, or a free transfer to another event.</p>
+        </details>
+        <details>
+          <summary>Can I transfer my ticket?</summary>
+          <p>Yes, free of charge. Get in touch before the night's sales close with the new person's name and email. If you move to a cheaper night, the difference is refunded.</p>
+        </details>
+        <details>
+          <summary>Can I cancel my own ticket?</summary>
+          <p>Refund requests for regular events must arrive no later than 96 hours before sales close, and a non-refundable service fee is deducted. Special events are not refunded unless the event is canceled.</p>
+        </details>
+        <details>
+          <summary>How do I reach support?</summary>
+          <p>By email, and in person by appointment. Support is not available by phone. Replies take 2 to 48 hours. Use the contact form below to write to us.</p>
+        </details>
+        <details>
+          <summary>Which payments are accepted?</summary>
+          <p>Visa, Mastercard, American Express, Discover, JCB, UnionPay, Visa Debit, Mastercard Debit, Google Pay, Apple Pay, Interac E-transfer, and cash by appointment. Card payments are processed by Clover. PayPal is not accepted.</p>
+        </details>
+        <details>
+          <summary>Where can I buy tickets?</summary>
+          <p>Only on this site. Tickets bought from third parties, including Eventbrite and Ticketmaster, are not accepted for entry.</p>
+        </details>
+        <details>
+          <summary>Do I need ID?</summary>
+          <p>Bring photo ID in case your age is disputed: a Canadian passport, an Ontario Photo Card or an Ontario Driver's Licence. Health cards are not accepted. Pub crawls need government photo ID for the clubs.</p>
+        </details>
+        <details>
+          <summary>How do I know an email is really from you?</summary>
+          <p>Every email from Ontario Speed Dating is sent from the ontariospeeddating.ca domain.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CONTACT -->
+  <section class="section section--ink contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-layout">
+      <div class="section-head">
+        <p class="label">Contact</p>
+        <h2 id="contact-title" class="display">Send us <em>a note.</em></h2>
+        <p class="lede">Support is by email and in person by appointment, not by phone. Expect a reply in 2 to 48 hours.</p>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="c-name">Your name</label>
+          <input id="c-name" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="c-name-err">
+          <p class="field-error" id="c-name-err"></p>
+        </div>
+        <div class="field">
+          <label for="c-email">Your email</label>
+          <input id="c-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" aria-describedby="c-email-err">
+          <p class="field-error" id="c-email-err"></p>
+        </div>
+        <div class="field">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" rows="6" required maxlength="2000" aria-describedby="c-message-err"></textarea>
+          <p class="field-error" id="c-message-err"></p>
+        </div>
+        <button class="btn btn--amber" type="submit">Send message</button>
+        <p class="form-status" id="contact-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-name">Ontario Speed Dating</p>
+      <p>Hamilton, Stoney Creek and Burlington</p>
+    </div>
+    <div>
+      <p>Tickets are sold only on this site.</p>
+      <p>Minimum age 19 for events and memberships.</p>
+    </div>
+    <div class="footer-small">
+      <p>Preview build by AI Picked You Media. Not the live site.</p>
+      <p>The film is atmosphere only and does not show a real event, venue or customer. Venue exteriors are Ontario Speed Dating's own photos.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- BOOKING PANEL -->
+<div class="booking" id="booking" hidden>
+  <div class="booking-scrim" data-booking-close></div>
+  <div class="booking-panel" role="dialog" aria-modal="true" aria-labelledby="booking-title" aria-describedby="booking-step">
+    <div class="booking-head">
+      <div>
+        <p class="label" id="booking-step"></p>
+        <h2 class="booking-title" id="booking-title" tabindex="-1"></h2>
+      </div>
+      <button type="button" class="booking-close" data-booking-close aria-label="Close booking">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+    <form class="booking-body" id="booking-form" novalidate data-lenis-prevent>
+      <div id="booking-content"></div>
+      <p class="booking-errors" id="booking-errors" role="alert"></p>
+    </form>
+    <div class="booking-foot">
+      <button type="button" class="btn btn--ghost" id="booking-back">Back</button>
+      <button type="submit" form="booking-form" class="btn btn--amber" id="booking-next">Continue</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/vendor/lenis.min.js" defer></script>
+<script src="js/site.js" defer></script>
+<script src="js/journey.js" defer></script>
+<script src="js/booking.js" defer></script>
+</body>
+</html>
